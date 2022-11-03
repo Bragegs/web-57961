@@ -1,0 +1,20 @@
+{
+  "name": "web-57961",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.41",
+    "pinia": "^2.0.23"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.2",
+    "vite": "^3.1.8",
+    "@vue/tsconfig": "^0.1.3",
+    "@types/node": "^16.11.56",
+    "typescript": "~4.8.4"
+  }
+}
