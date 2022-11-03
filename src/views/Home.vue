@@ -1,9 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TheWelcome from '../components/TheWelcome.vue';
+import { useCounterStore } from '../../stores/CounterStore';
+
+const countStore = useCounterStore();
+</script>
 
 <template>
-  <main>
-    <router-view />
-  </main>
+  <div>
+    <TheWelcome v-model:counter="countStore.count" :test-string="countStore.testString" />
+  </div>
 </template>
 
 <style scoped>

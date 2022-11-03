@@ -11,7 +11,7 @@ import { ref } from 'vue';
 
 // Does not work with my testString. If only count stays it works..
 export const useCounterStore = defineStore('counter', () => {
-  const count = ref<number>(0);
-  const testString = ref<string>('');
-  return { count, testString };
+  const count = ref<number>(1);
+  const testString = ref<string>('hello');
+  return { count, testString};
 });

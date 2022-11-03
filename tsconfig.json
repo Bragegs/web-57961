@@ -1,20 +1,17 @@
 {
   "extends": "./base.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "shims-vue.d.ts"],
+
   "compilerOptions": {
     "composite": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     },
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
-    "lib": [
-      "ESNext",
-      "DOM"
-    ],
+    "lib": ["ESNext", "DOM"],
     "sourceMap": true,
     "resolveJsonModule": true,
     "noEmit": true,
@@ -23,7 +20,5 @@
     "noImplicitReturns": true,
     "jsx": "preserve"
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
